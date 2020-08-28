@@ -15,6 +15,7 @@ body{
 }
 .container_heading{
   width: 1200px;
+  height: 52px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -29,6 +30,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 .xizmatlar_for{
   position: relative;
 z-index: 5;
@@ -110,7 +112,7 @@ transition: ease all 0.8s;
 .navigation_list_link:active{
   background: rgba(25, 25, 25, 0.7);
   color: #FFFFFF;
-box-shadow: none;
+box-shadow: none !important;
 }
 
 .xizmatlar_ul{
