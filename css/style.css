@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-Italic.woff2') format('woff2'),
+      url('../fonts/ProductSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+      url('../fonts/ProductSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-BoldItalic.woff2') format('woff2'),
+      url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+      url('../fonts/ProductSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 html{
   box-sizing: border-box;
@@ -8,20 +44,19 @@ html{
   box-sizing: inherit;
 }
 body{
-  font-family : 'Roboto', sans-serif;
+  font-family : 'Product Sans', sans-serif;
 }
 .header_top{
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 .container_heading{
   width: 1200px;
-  height: 51px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 100px;
+  padding: 0px 100px;
 }
 .navigation_lists{
   align-items: center;
@@ -44,13 +79,7 @@ z-index: 5;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
-/* .xizmatlar_for:hover .dopdowm_menus_links{
-  animation-name: go-up;
-  animation-duration: 0.6s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-} */
+
 @keyframes go-up {
   from {
     opacity: 0;
@@ -73,9 +102,12 @@ z-index: 5;
   position: absolute;
   top: 100%;
   left: 50%;
-/* z-index:100; */
+  background-color: #fff;
  padding: 0;
   list-style-type: none;
+  padding: 8px 0px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
 }
 .xizmatlar_ul li:nth-child(3) a{
   text-transform: uppercase;
@@ -113,12 +145,6 @@ transition: ease all 0.8s;
   background: rgba(25, 25, 25, 0.7);
   color: #FFFFFF;
 box-shadow: none !important;
-}
-
-.xizmatlar_ul{
-  padding: 8px 0px;
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
 }
 .dopdown_menus_link{
   padding:8px 16px;
