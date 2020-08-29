@@ -47,7 +47,9 @@ body{
   font-family : 'Product Sans', sans-serif;
 }
 .header_top{
+
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 .container{
   width: 1200px;
@@ -178,11 +180,61 @@ body{
   color: rgba(85, 19, 19, 0.6);
   background: #00bafc99;
 }
+
+.you__tube__apple__video{
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.you__tube__video__heading__text{
+  display: inline-block;
+  margin: 0 0 16px 0;
+  width: 434px;
+  font-weight: bold;
+font-size: 30px;
+line-height: 130%;
+color: #000000;
+}
+.you__tube__apple__subtext{
+  margin: 0 0 16px 0;
+  width: 465px;
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+
+.link__for__services{
+  display: inline-block;
+  background-color : #00BAFC;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: ease 0.5s background-color;
+}
+
+.link__for__services:hover{
+  background-color : rgba(0, 186, 252, 0.8);
+}
+.link__for__services:active{
+  background-color : rgba(0, 186, 252, 0.6);
+}
+
+.you__tube__apple__video iframe{
+  width: 458px;
+  height: 258px;
+
+}
+
 .services{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 56px 0;
+
 }
 .services__header__name{
   font-weight: bold;
@@ -206,6 +258,8 @@ color: #000000;
   list-style-type: none;
   display: flex;
   flex-wrap:wrap;
+  margin-left: -35px;
+  margin-right: -35px;
   /* height:576px; */
   justify-content: center;
   margin: 0;
@@ -214,22 +268,25 @@ color: #000000;
 
 }
 .our__services__list{
-  margin-right: 70px;
+  margin-right: 35px;
+  margin-left: 35px;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
 }
-.our__services__list:nth-child(3n),
+/* .our__services__list:nth-child(3n),
 .our__services__list:nth-child(5){
   margin-right: 0;
-}
+} */
 .our__services_link{
   width: 320px;
-height: 260px;
   display: block;
   background: #FFFFFF;
 box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
 border-radius: 5px;
 text-decoration: none;
 padding:24px 60px;
+flex-grow: 1;
 }
 .our__services_link:hover{
   background: #FFFFFF;
@@ -329,12 +386,7 @@ transition:background-color ease 0.5s;
   font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-/* identical to box height, or 150% */
-
 text-align: center;
 text-decoration-line: underline;
-
-/* blue */
-
 color: #00BAFC;
 }
