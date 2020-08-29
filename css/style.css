@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Product Sans';
   src: url('../fonts/ProductSans-Italic.woff2') format('woff2'),
-      url('../fonts/ProductSans-Italic.woff') format('woff');
+  url('../fonts/ProductSans-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Product Sans';
   src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
-      url('../fonts/ProductSans-Bold.woff') format('woff');
+  url('../fonts/ProductSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'Product Sans';
   src: url('../fonts/ProductSans-BoldItalic.woff2') format('woff2'),
-      url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+  url('../fonts/ProductSans-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: 'Product Sans';
   src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
-      url('../fonts/ProductSans-Regular.woff') format('woff');
+  url('../fonts/ProductSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -49,6 +49,11 @@ body{
 .header_top{
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container_heading{
   width: 1200px;
   margin-left: auto;
@@ -68,7 +73,7 @@ body{
 
 .xizmatlar_for{
   position: relative;
-z-index: 5;
+  z-index: 5;
 }
 .xizmatlar_for:hover .xizmatlar_ul{
   display: block;
@@ -103,11 +108,11 @@ z-index: 5;
   top: 100%;
   left: 50%;
   background-color: #fff;
- padding: 0;
+  padding: 0;
   list-style-type: none;
   padding: 8px 0px;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
+  border-radius: 5px;
 }
 .xizmatlar_ul li:nth-child(3) a{
   text-transform: uppercase;
@@ -118,11 +123,11 @@ border-radius: 5px;
 }
 .navigation_list_link{
   padding:  16px;
-display: block;
-text-decoration: none;
-color:black;
-cursor: pointer;
-transition: ease all 0.8s;
+  display: block;
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  transition: ease all 0.8s;
 }
 .tel_number{
   white-space: nowrap;
@@ -135,7 +140,7 @@ transition: ease all 0.8s;
   padding-left: 13px;
   padding-right: 13px;
   border: 3px solid #00BAFC;
-transition: ease all 0.8s;
+  transition: ease all 0.8s;
 }
 
 .navigation_list:hover .navigation_list_link{
@@ -144,7 +149,7 @@ transition: ease all 0.8s;
 .navigation_list_link:active{
   background: rgba(25, 25, 25, 0.7);
   color: #FFFFFF;
-box-shadow: none !important;
+  box-shadow: none !important;
 }
 .dopdown_menus_link{
   padding:8px 16px;
@@ -159,17 +164,177 @@ box-shadow: none !important;
 }
 .dopdown_menus_link:hover{
   background: #00BAFC;
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 .tel_number:hover{
   box-shadow:none !important;
   color: #00BAFC;
   border: 3px solid #00BAFC;
-background-color: #fff;
+  background-color: #fff;
   border-radius: 5px;
 }
 .tel_number:active{
-  border: 3px solid #00bafc99 !important;
-color: rgba(255, 255, 255,0.6);
-background: #00bafc99;
+  border: 3px solid #00BAFC;
+  color: rgba(85, 19, 19, 0.6);
+  background: #00bafc99;
+}
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 0;
+}
+.services__header__name{
+  font-weight: bold;
+  margin-top:0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+}
+.services__header__text{
+  width: 720px;
+  font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.our__services__lists{
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  /* height:576px; */
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* align-items:space-between; */
+
+}
+.our__services__list{
+  margin-right: 70px;
+  margin-bottom: 48px;
+}
+.our__services__list:nth-child(3n),
+.our__services__list:nth-child(5){
+  margin-right: 0;
+}
+.our__services_link{
+  width: 320px;
+height: 260px;
+  display: block;
+  background: #FFFFFF;
+box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+text-decoration: none;
+padding:24px 60px;
+}
+.our__services_link:hover{
+  background: #FFFFFF;
+box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+.our__services_link:active{
+  background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+}
+.our__service__name{
+  font-size: 20px;
+line-height: 130%;text-decoration: none;
+margin-top: 0;
+margin-bottom: 16px;
+
+text-align: center;
+color: #000000;
+}
+
+
+.web__site::before{
+  background-image:url('../images/web_sayt_tuzish.svg');
+  content:'';
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 200px;
+  height: 130px;
+}
+.telegram__bot::before{
+  background-image:url('../images/bot_yasash.svg');
+  content:'';
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 200px;
+  height: 130px;
+}
+.smm::before{
+  background-image:url('../images/smm_marketing.svg');
+  content:'';
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 200px;
+  height: 130px;
+}
+.graphics_design::before{
+  background-image:url('../images/design_grafika.svg');
+  content:'';
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 200px;
+  height: 130px;
+}
+.crm::before{
+  background-image:url('../images/crm-illustration.svg');
+  content:'';
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+display: block;
+  width: 169.22px;
+  height: 130px;
+
+}
+.our__service__text{
+  font-size: 16px;
+line-height: 24px;
+margin:0;
+text-align: center;
+
+color: #000000;
+}
+.buyurtma_berish{
+  text-decoration: none;
+  font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+padding: 8px 16px;
+margin-right:16px;
+background: #00BAFC;
+border-radius: 5px;
+color: #FFFFFF;
+display:inline-block;
+transition:background-color ease 0.5s;
+}
+.buyurtma_berish:hover{
+  background: rgba(0, 186, 252, 0.8);
+}
+.buyurtma_berish:active{
+  background: rgba(0, 186, 252, 0.6);
+}
+.our__services__part{
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+text-decoration-line: underline;
+
+/* blue */
+
+color: #00BAFC;
 }
