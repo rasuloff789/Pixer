@@ -44,6 +44,7 @@ html{
   box-sizing: inherit;
 }
 body{
+  margin-top: 52px;
   font-family : 'Product Sans', sans-serif;
 }
 .header_top{
@@ -392,4 +393,105 @@ line-height: 24px;
 text-align: center;
 text-decoration-line: underline;
 color: #00BAFC;
+}
+.our__work_container{
+  width:830px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.our__work__head__heading{
+  font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 130%;
+text-align: center;
+margin-top: 0;
+margin-bottom: 16px;
+}
+.our__work__head__text{
+  width: 719px;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+margin-top: 0;
+margin-bottom: 24px;
+}
+.our__work__lists{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.our__work__list{
+  display: flex;
+  margin-top: 0;
+  width: 800px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.our__work__list::before{
+  content:'';
+  order: -1;
+  width:305px;
+height:270px;
+
+background-repeat: no-repeat;
+background-image: cover;
+  background-image:url('../images/step-illlustration.svg');
+  display:inline-block;
+}
+.our__work__list:nth-child(2)::before{
+  background-image:url('../images/woman_to_look.svg');
+}
+.our__work__list:nth-child(3)::before{
+  background-image:url('../images/programmer.svg');
+}
+.our__work__list:nth-child(4)::before{
+  background-image:url('../images/succes.svg');
+}
+.our__work__list:nth-child(5)::before{
+  background-image:url('../images/bolacha.svg');
+}
+.our__work__list:nth-child(2n)::before{
+order: 3;
+}
+.became{
+  display: flex;
+  width: 475px;
+  flex-direction:column;
+  order:-1;
+}
+.our__work__list__heading{
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 130%;
+/* text-align: center; */
+order: 2;
+margin: 0;
+display: inline-block;
+color: #000000;
+}
+
+.our__work__list__text{
+/* font-family: Product Sans; */
+font-style: normal;
+font-weight: normal;
+text-align: left;
+font-size: 16px;
+margin: 0;
+order:3;
+display: inline-block;
+line-height: 24px;
+color: #000000;
+display: inline-block;
+
+width: 100%;
 }
